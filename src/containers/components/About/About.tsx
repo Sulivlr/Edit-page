@@ -16,7 +16,7 @@ const About = () => {
     const response = await axiosApi.get<ApiPage | null>('/pages/' + params.about + '.json');
     setLoading(false);
     setAbout(response.data);
-    }, [params.about]);
+  }, [params.about]);
 
   useEffect(() => {
     void fetchAbout();

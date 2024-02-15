@@ -31,6 +31,7 @@ const Home:React.FC = () => {
           <div className="card-body">
             <h6>{abouts.title}</h6>
             <Link className="btn btn-primary" to={'/about/' + abouts.id}>About</Link>
+            <Link className="btn btn-success" to={'/admin/' + abouts.id}>Edit Page</Link>
           </div>
         </div>
       ))}
